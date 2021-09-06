@@ -1,38 +1,190 @@
-.App {
+/*#region GlOBAL VARIABLES */
+/*GForm Colors*/
+/*Crumb Nav*/
+/*Social Icon Colors*/
+/*#endregion*/
+/*#region GLOBAL STYLES */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: #e8e8e8;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+  background-color: transparent;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "EB Garamond", serif;
+  line-height: 1.5em;
+}
+
+img {
+  width: 50%;
+}
+
+.required-asterisk, .required-text {
+  color: #ff6347;
+  font-weight: 600;
+}
+
+.required-text {
+  font-size: .65em;
+}
+
+.print {
+  display: none;
+}
+
+.btn {
+  padding: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .035em;
+}
+
+.centered-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+code {
+  font-size: .9em;
+  color: #ff6347;
+}
+
+.no-go {
+  cursor: not-allowed;
+}
+
+/*#endregion*/
+/* #region HEADER */
+header {
+  min-height: 250px;
+  text-align: center;
+  background-color: #071b34;
+  color: #e6e6e6;
+  position: relative;
+}
+
+header .header-content {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* #endregion */
+/* #region MAIN */
+/* #endregion */
+/* #region SOCIAL ICONS */
+.aew-social-link .fa-react {
+  background-color: #00d8ff;
+}
+
+.aew-social-link .fa-linkedin-in {
+  background-color: #0077B5;
+}
+
+.aew-social-link .fa-twitter {
+  background-color: #1da1f2;
+}
+
+.aew-social-link .fa-slideshare {
+  background-color: #0077B5;
+}
+
+.aew-social-link .fa-free-code-camp {
+  background-color: darkgreen;
+}
+
+.aew-social-link .fa-youtube {
+  background-color: #CD201F;
+}
+
+.aew-social-link .fa-github {
+  background-color: #24292e;
+}
+
+.aew-social-link .fa-behance-square {
+  background-color: #0057FF;
+}
+
+/* #endregion */
+/* #region FOOTER */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333333;
+  color: #b8b8b8;
+  padding: 8px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #e6e6e6;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+  color: #f5deb3;
+}
+
+footer .logo-container {
+  width: 15%;
+  font-size: .7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .logo-container a {
+  color: #f5deb3;
+}
+
+footer .logo-container .logo-img {
+  width: 20%;
+}
+
+footer .social-links-container {
+  width: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer .footer-text {
+  width: auto;
+  text-align: right;
+  margin-bottom: 0;
+  font-size: .7em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* #endregion */
+@media print {
+  .print, #aedubyah-print-footer.print {
+    display: block;
+  }
+  .no-print, .aedubyah-global-footer.no-print {
+    display: none;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */

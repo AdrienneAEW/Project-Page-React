@@ -1,0 +1,221 @@
+/*#region GlOBAL VARIABLES */
+$heading-font: 'EB Garamond', serif;
+$body-font: 'Roboto', sans-serif;
+$accent1-font: 'Open Sans', sans-serif; 
+$accent2-font: 'Roboto Slab', serif;
+
+$bg-body: #e8e8e8;
+$body-dark: #333333;
+$body-medium: #585858;
+$body-light: #e6e6e6;
+$footer-text: #b8b8b8;
+$primary-dark: #071b34;
+$accent-light: #f2f2f2;
+$accent1: #8b4513;
+$accent2: #f5deb3;
+$accent3: #9dd0e1;
+$standard-text: #000000;
+$standard-body: #ffffff;
+$link-text: #D2691E;
+$page-link: rgba(128, 21, 0, .7);
+$link-bright: #c94c4c;
+$warning-red: #ff6347;
+
+/*GForm Colors*/
+$gf-pale-green: #b1cbbb;
+$gf-soft-blue: #deeaee;
+
+/*Crumb Nav*/
+$crumb-link: #0275d8;
+$crumb-hover: #01447e;
+$crumb-visited: #C48F65;
+$crumb-active: #801500;
+
+/*Social Icon Colors*/
+$react-bg: #00d8ff;
+/*#endregion*/
+
+
+
+/*#region GLOBAL STYLES */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+	background-color: $bg-body;
+}
+
+body {
+    font-family: $body-font;
+    color: $body-dark;
+    background-color: transparent;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font;
+    line-height: 1.5em;
+}
+
+img {
+    width: 50%;
+}
+
+.required-asterisk, .required-text {
+    color: $warning-red;
+    font-weight: 600;
+}
+
+.required-text {
+    font-size: .65em;
+}
+
+.print {
+    display: none;
+}
+
+.btn {
+    padding: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .035em;
+}
+
+.centered-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+code {
+    font-size: .9em;
+    color: $warning-red;
+}
+
+.no-go {
+    cursor: not-allowed;
+}
+/*#endregion*/
+
+
+/* #region HEADER */
+header {
+    min-height: 250px;
+    text-align: center;
+    background-color: $primary-dark;
+    color: $body-light;
+    position: relative;
+
+    .header-content {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateY(-25%);
+        transform: translateX(-50%);
+    }
+}
+/* #endregion */
+
+/* #region MAIN */
+
+/* #endregion */
+
+/* #region SOCIAL ICONS */
+
+.aew-social-link .fa-react {
+	background-color: #00d8ff;
+} 
+
+.aew-social-link .fa-linkedin-in {
+	background-color: #0077B5;
+}
+
+.aew-social-link .fa-twitter {
+	background-color: #1da1f2;
+}
+
+.aew-social-link .fa-slideshare {
+	background-color: #0077B5;
+}
+
+.aew-social-link .fa-free-code-camp {
+	background-color: darkgreen;
+}
+
+.aew-social-link .fa-youtube {
+	background-color: #CD201F;
+}
+
+.aew-social-link .fa-github {
+	background-color:#24292e;
+}
+
+.aew-social-link .fa-behance-square {
+	background-color: #0057FF;
+}
+/* #endregion */
+
+/* #region FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $body-dark;
+    color: $footer-text;
+    padding: 8px;
+
+    a {
+        text-decoration: none;
+        color: $body-light;
+
+        &:hover {
+            text-decoration: underline;
+            font-weight: 600;
+            color: $accent2;
+        }
+    }
+
+    .logo-container {
+        width: 15%;
+        font-size: .7em;
+        display: flex;
+
+        a {
+            color: $accent2;
+        }
+    
+        .logo-img {
+            width: 20%;
+        }
+    
+    }
+
+    .social-links-container {
+        width: auto;
+        text-align: center;
+        
+    }
+
+    .footer-text {
+        width: auto;
+        text-align: right;
+        margin-bottom: 0;
+        font-size: .7em;
+    }
+
+    
+}
+/* #endregion */
+
+@media print {
+	.print, #aedubyah-print-footer.print {
+		display: block;
+	}
+
+	.no-print, .aedubyah-global-footer.no-print {
+		display: none;
+	}
+}
