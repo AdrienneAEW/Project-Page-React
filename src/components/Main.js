@@ -4,6 +4,8 @@ import '../App.css';
 
 
 
+
+
 const Specs = (props) => {
     const specifications = props.specsData.map((spec, index) => {
         return (
@@ -12,7 +14,6 @@ const Specs = (props) => {
                 <p>Icons: {spec.icons}</p>
                 <p>Images: {spec.images}</p>
                 <p>Colors: {spec.colors}</p>
-                
             </div>
         )
         
@@ -21,11 +22,14 @@ const Specs = (props) => {
     return <div className="project-specs">Project Specs: {specifications}</div>
 }
 
+
 export default class Main extends Component {
     constructor(props) {
         super(props)
         this.state = {
             Ind: 0,
+            origfull: 'https://1drv.ms/u/s!AsShLFW0DLmuhLZg4ypBoYxrwVE0MQ',
+            livefull: 'https://1drv.ms/u/s!AsShLFW0DLmuhLZhkothGcn2yV_MdA'
         }
 
         this.projectOne = this.projectOne.bind(this)
@@ -36,18 +40,24 @@ export default class Main extends Component {
     projectOne() {
         this.setState({
             Ind: 0,
+            origfull: 'https://1drv.ms/u/s!AsShLFW0DLmuhLZg4ypBoYxrwVE0MQ',
+            livefull: 'https://1drv.ms/u/s!AsShLFW0DLmuhLZhkothGcn2yV_MdA'
         })
     }
 
     projectTwo() {
         this.setState({
             Ind: 1,
+            origfull: 'https://1drv.ms/u/s!AsShLFW0DLmuhMA-5Ixno-jFkHC7NA',
+            livefull: 'https://1drv.ms/u/s!AsShLFW0DLmuhMA9dqIdMwYlV3IBZw'
         })
     }
 
     projectThree() {
         this.setState({
             Ind: 2,
+            origfull: 'https://1drv.ms/u/s!AsShLFW0DLmuhotd0Z_S5-r2c_d2AQ',
+            livefull: 'https://1drv.ms/u/s!AsShLFW0DLmuhote5Ad3nBqjX1bB5Q'
         })
     }
 
@@ -55,7 +65,7 @@ export default class Main extends Component {
         
         
         return (
-            <main className="main-content">
+        <main className="main-content">
             <header>
                 <div className="header-content">
                     <h1 id="project-title">{projects[this.state.Ind].name}</h1>
@@ -68,19 +78,21 @@ export default class Main extends Component {
                     <button type="button" className="btn btn-outline-dark btn-group-small project-btn" aria-label={projects[0].navtitle} aria-pressed="true" title={projects[0].navtitle} onClick={this.projectOne}>{projects[0].prjbtn}</button>
                     <button type="button" className="btn btn-outline-dark btn-group-small project-btn" title={projects[1].navtitle} aria-label={projects[1].navtitle} aria-pressed="true" onClick={this.projectTwo}>{projects[1].prjbtn}</button>
                     <button type="button" className="btn btn-group-small btn-outline-dark btn-group-small project-btn" title={projects[2].navtitle} aria-label={projects[2].navtitle} aria-pressed="true" onClick={this.projectThree}>{projects[2].prjbtn}</button>
-
-                    
                 </div>
             </div>
             <div className="row project-open">
                 <div className="col-4 open-left">
                     <figure className="project-img-container">
-                        <img src={projects[this.state.Ind].imgorg} className="project-img project-org-img img-thumbnail" title={projects[this.state.Ind].name + projects[this.state.Ind].altorg} alt={projects[this.state.Ind].name + projects[this.state.Ind].altorg} />
+                        <a href={this.state.origfull} title="View the image at full size." aria-label="View the image at full size.">
+                            <img src={projects[this.state.Ind].imgorg} className="project-img project-org-img img-thumbnail" title={projects[this.state.Ind].name + projects[this.state.Ind].altorg} alt={projects[this.state.Ind].name + projects[this.state.Ind].altorg} />
+                        </a>
                         <figcaption className="project-caption">{projects[this.state.Ind].captionorg}</figcaption>
                     </figure>
 
                     <figure className="project-img-container">
-                    <img src={projects[this.state.Ind].imglive} className="project-img project-live-img img-thumbnail" title={projects[this.state.Ind].name + projects[this.state.Ind].altlive} alt={projects[this.state.Ind].name + projects[this.state.Ind].altlive} />
+                        <a href={this.state.livefull} title="View the image at full size." aria-label="View the image at full size.">
+                            <img src={projects[this.state.Ind].imglive} className="project-img project-live-img img-thumbnail" title={projects[this.state.Ind].name + projects[this.state.Ind].altlive} alt={projects[this.state.Ind].name + projects[this.state.Ind].altlive} />
+                        </a>
                     <figcaption className="project-caption">{projects[this.state.Ind].captionlive}</figcaption>
                 </figure>
                 </div>
@@ -88,16 +100,16 @@ export default class Main extends Component {
                     <h2>About {projects[this.state.Ind].name}</h2>
                     <p>Description: {projects[this.state.Ind].description}</p>
                     <Specs specsData={projects[this.state.Ind].specs} />
-                    
                 </div>
             </div>
 
             <div className="project-close">
                 <div>Add Notes</div>
+                <div>Call to Action</div>
                 <div>Contact Me</div>
             </div>
                 
-            </main>
+        </main>
         )
     }
 }

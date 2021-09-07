@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import projects from './Projects'
+
 
 let dateNow = new Date();
 let yearNow = dateNow.getFullYear();

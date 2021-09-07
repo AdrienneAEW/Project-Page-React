@@ -1,6 +1,7 @@
 {
   "name": "aew-projects",
   "version": "0.1.0",
+  
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -11,6 +12,7 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
+  "homepage": "https://adrienneaew.me/samples/aew-projects",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
