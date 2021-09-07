@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/AdrienneAEW/Project-Page-React/static/css/main.75f39fbd.chunk.css",
+    "main.js": "/AdrienneAEW/Project-Page-React/static/js/main.9249cb4b.chunk.js",
+    "main.js.map": "/AdrienneAEW/Project-Page-React/static/js/main.9249cb4b.chunk.js.map",
+    "runtime-main.js": "/AdrienneAEW/Project-Page-React/static/js/runtime-main.cde37a52.js",
+    "runtime-main.js.map": "/AdrienneAEW/Project-Page-React/static/js/runtime-main.cde37a52.js.map",
+    "static/js/2.59b8d732.chunk.js": "/AdrienneAEW/Project-Page-React/static/js/2.59b8d732.chunk.js",
+    "static/js/2.59b8d732.chunk.js.map": "/AdrienneAEW/Project-Page-React/static/js/2.59b8d732.chunk.js.map",
+    "index.html": "/AdrienneAEW/Project-Page-React/index.html",
+    "static/css/main.75f39fbd.chunk.css.map": "/AdrienneAEW/Project-Page-React/static/css/main.75f39fbd.chunk.css.map",
+    "static/js/2.59b8d732.chunk.js.LICENSE.txt": "/AdrienneAEW/Project-Page-React/static/js/2.59b8d732.chunk.js.LICENSE.txt",
+    "static/media/Cybervision-Colors.2507de5f.png": "/AdrienneAEW/Project-Page-React/static/media/Cybervision-Colors.2507de5f.png",
+    "static/media/PerryAssociates-Colors.70772d2c.png": "/AdrienneAEW/Project-Page-React/static/media/PerryAssociates-Colors.70772d2c.png",
+    "static/media/RetrainBackPain-Colors.8b6f59d1.png": "/AdrienneAEW/Project-Page-React/static/media/RetrainBackPain-Colors.8b6f59d1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cde37a52.js",
+    "static/js/2.59b8d732.chunk.js",
+    "static/css/main.75f39fbd.chunk.css",
+    "static/js/main.9249cb4b.chunk.js"
+  ]
+}
