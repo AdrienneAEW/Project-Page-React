@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Project-Page-React/static/css/main.75f39fbd.chunk.css",
-    "main.js": "/Project-Page-React/static/js/main.9249cb4b.chunk.js",
-    "main.js.map": "/Project-Page-React/static/js/main.9249cb4b.chunk.js.map",
+    "main.css": "/Project-Page-React/static/css/main.edab90b4.chunk.css",
+    "main.js": "/Project-Page-React/static/js/main.9304619c.chunk.js",
+    "main.js.map": "/Project-Page-React/static/js/main.9304619c.chunk.js.map",
     "runtime-main.js": "/Project-Page-React/static/js/runtime-main.5b850e4c.js",
     "runtime-main.js.map": "/Project-Page-React/static/js/runtime-main.5b850e4c.js.map",
     "static/js/2.59b8d732.chunk.js": "/Project-Page-React/static/js/2.59b8d732.chunk.js",
     "static/js/2.59b8d732.chunk.js.map": "/Project-Page-React/static/js/2.59b8d732.chunk.js.map",
     "index.html": "/Project-Page-React/index.html",
-    "static/css/main.75f39fbd.chunk.css.map": "/Project-Page-React/static/css/main.75f39fbd.chunk.css.map",
+    "static/css/main.edab90b4.chunk.css.map": "/Project-Page-React/static/css/main.edab90b4.chunk.css.map",
     "static/js/2.59b8d732.chunk.js.LICENSE.txt": "/Project-Page-React/static/js/2.59b8d732.chunk.js.LICENSE.txt",
     "static/media/Cybervision-Colors.2507de5f.png": "/Project-Page-React/static/media/Cybervision-Colors.2507de5f.png",
     "static/media/PerryAssociates-Colors.70772d2c.png": "/Project-Page-React/static/media/PerryAssociates-Colors.70772d2c.png",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.5b850e4c.js",
     "static/js/2.59b8d732.chunk.js",
-    "static/css/main.75f39fbd.chunk.css",
-    "static/js/main.9249cb4b.chunk.js"
+    "static/css/main.edab90b4.chunk.css",
+    "static/js/main.9304619c.chunk.js"
   ]
 }
