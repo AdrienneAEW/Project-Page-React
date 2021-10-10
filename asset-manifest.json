@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Project-Page-React/static/css/main.edab90b4.chunk.css",
-    "main.js": "/Project-Page-React/static/js/main.9304619c.chunk.js",
-    "main.js.map": "/Project-Page-React/static/js/main.9304619c.chunk.js.map",
+    "main.js": "/Project-Page-React/static/js/main.91d9f840.chunk.js",
+    "main.js.map": "/Project-Page-React/static/js/main.91d9f840.chunk.js.map",
     "runtime-main.js": "/Project-Page-React/static/js/runtime-main.5b850e4c.js",
     "runtime-main.js.map": "/Project-Page-React/static/js/runtime-main.5b850e4c.js.map",
     "static/js/2.59b8d732.chunk.js": "/Project-Page-React/static/js/2.59b8d732.chunk.js",
@@ -10,14 +10,14 @@
     "index.html": "/Project-Page-React/index.html",
     "static/css/main.edab90b4.chunk.css.map": "/Project-Page-React/static/css/main.edab90b4.chunk.css.map",
     "static/js/2.59b8d732.chunk.js.LICENSE.txt": "/Project-Page-React/static/js/2.59b8d732.chunk.js.LICENSE.txt",
-    "static/media/Cybervision-Colors.2507de5f.png": "/Project-Page-React/static/media/Cybervision-Colors.2507de5f.png",
-    "static/media/PerryAssociates-Colors.70772d2c.png": "/Project-Page-React/static/media/PerryAssociates-Colors.70772d2c.png",
-    "static/media/RetrainBackPain-Colors.8b6f59d1.png": "/Project-Page-React/static/media/RetrainBackPain-Colors.8b6f59d1.png"
+    "static/media/AllensPie-Colors.79747ed5.png": "/Project-Page-React/static/media/AllensPie-Colors.79747ed5.png",
+    "static/media/Cybervision-Colors.24f903f7.png": "/Project-Page-React/static/media/Cybervision-Colors.24f903f7.png",
+    "static/media/PerryAssociates-Colors.fa72f1f9.png": "/Project-Page-React/static/media/PerryAssociates-Colors.fa72f1f9.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5b850e4c.js",
     "static/js/2.59b8d732.chunk.js",
     "static/css/main.edab90b4.chunk.css",
-    "static/js/main.9304619c.chunk.js"
+    "static/js/main.91d9f840.chunk.js"
   ]
 }
