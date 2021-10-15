@@ -12,13 +12,12 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  background-color: #e8e8e8;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   color: #333333;
-  background-color: transparent;
+  background-color: #e8e8e8;
   letter-spacing: 1px;
   line-height: 1.5em;
 }
@@ -60,6 +59,17 @@ img {
 code {
   font-size: .9em;
   color: #ff6347;
+}
+
+a {
+  color: #8b4513;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: .7;
+  color: #8b4513;
 }
 
 .no-go {
@@ -115,95 +125,110 @@ header .header-content {
 }
 
 /* #region ABOUT*/
+.project-img {
+  width: 100%;
+}
+
+.spec-container {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
 .spec-detail {
   padding-left: .5em;
 }
 
+.spec-detail p {
+  margin-bottom: 0;
+}
+
 .project-palette {
-  width: 50%;
+  width: 65%;
 }
 
 /* #endregion */
 /* #region ISSUE DETAILS */
-.compare {
-  min-width: 150px;
-  min-height: 150px;
-  background-size: cover;
+.issue-details {
+  background-color: #ffffff;
+}
+
+.issue-details .card {
+  background-color: transparent;
+}
+
+.compare img {
+  -webkit-box-shadow: -2px 2px 8px;
+          box-shadow: -2px 2px 8px;
+}
+
+.issue-content {
+  padding-left: 1em;
+  padding-right: 3em;
+}
+
+.issue-img {
+  width: 100%;
+}
+
+.cybervision-imgs2 .issue-imgs, .allenspie-imgs2 .issue-imgs,
+.allenspie-imgs3 .issue-imgs, .perryassociates-imgs1 .issue-imgs,
+.perryassociates-imgs3 .issue-imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cybervision-imgs2 .issue-imgs .compare, .allenspie-imgs2 .issue-imgs .compare,
+.allenspie-imgs3 .issue-imgs .compare, .perryassociates-imgs1 .issue-imgs .compare,
+.perryassociates-imgs3 .issue-imgs .compare {
+  width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /* #region Cybervision */
-.cybervision-live1, .cybervision-org1 {
-  background-position: top;
-}
-
-.cybervision-org1 {
-  background-image: url("https://snz04pap002files.storage.live.com/y4m6LNYCDTn0tt1vHSr9lCrF8oB_WlovaAWyg8T3lY-R8MN0SKNRE8Z4CaKw306ZzMkdydvO39cWoprCuMY25uVXkuB4l7qAO9bQZPhSvB3AoB9XbCXlvAXDViB3ggQzVBVWhqnMojE2XY3owkB_h9hAzcIEM2GwhzjEkK9DDyvLxjKU2U9XwX9Mw0Ht7F7u_zh?width=393&height=660&cropmode=none");
-}
-
-.cybervision-live1 {
-  background-image: url("https://snz04pap002files.storage.live.com/y4m8HkNDSboHBDyHPy1KQpch_JVvL14eUGurk6SB2X27ItVMREE_4OWD7JsMhmYHd-Bk_gy4vhsuD_WjMHhsKPDmtbybYCxXF2xShKhN-n1ibNX0dYTu0lGk1fTlI8quSEvVoXziagJUH0RT74jpV6nSDl76LeMZbWpl7JhvJIgZ69WZTOMJvaMo8lDdNQa5r_u?width=660&height=621&cropmode=none");
-}
-
-.cybervision-org2, .cybervision-live2 {
-  background-position: center;
-}
-
-.cybervision-org2 {
-  background-image: url("https://snz04pap002files.storage.live.com/y4m6LNYCDTn0tt1vHSr9lCrF8oB_WlovaAWyg8T3lY-R8MN0SKNRE8Z4CaKw306ZzMkdydvO39cWoprCuMY25uVXkuB4l7qAO9bQZPhSvB3AoB9XbCXlvAXDViB3ggQzVBVWhqnMojE2XY3owkB_h9hAzcIEM2GwhzjEkK9DDyvLxjKU2U9XwX9Mw0Ht7F7u_zh?width=393&height=660&cropmode=none");
-}
-
-.cybervision-live2 {
-  background-image: url("https://snz04pap002files.storage.live.com/y4m8HkNDSboHBDyHPy1KQpch_JVvL14eUGurk6SB2X27ItVMREE_4OWD7JsMhmYHd-Bk_gy4vhsuD_WjMHhsKPDmtbybYCxXF2xShKhN-n1ibNX0dYTu0lGk1fTlI8quSEvVoXziagJUH0RT74jpV6nSDl76LeMZbWpl7JhvJIgZ69WZTOMJvaMo8lDdNQa5r_u?width=660&height=621&cropmode=none");
-}
-
-.cybervision-live3, .cybervision-org3 {
-  background-position: bottom;
-}
-
-.cybervision-org3 {
-  background-image: url("https://snz04pap002files.storage.live.com/y4m6LNYCDTn0tt1vHSr9lCrF8oB_WlovaAWyg8T3lY-R8MN0SKNRE8Z4CaKw306ZzMkdydvO39cWoprCuMY25uVXkuB4l7qAO9bQZPhSvB3AoB9XbCXlvAXDViB3ggQzVBVWhqnMojE2XY3owkB_h9hAzcIEM2GwhzjEkK9DDyvLxjKU2U9XwX9Mw0Ht7F7u_zh?width=393&height=660&cropmode=none");
-}
-
-.cybervision-live3 {
-  background-image: url("https://snz04pap002files.storage.live.com/y4m8HkNDSboHBDyHPy1KQpch_JVvL14eUGurk6SB2X27ItVMREE_4OWD7JsMhmYHd-Bk_gy4vhsuD_WjMHhsKPDmtbybYCxXF2xShKhN-n1ibNX0dYTu0lGk1fTlI8quSEvVoXziagJUH0RT74jpV6nSDl76LeMZbWpl7JhvJIgZ69WZTOMJvaMo8lDdNQa5r_u?width=660&height=621&cropmode=none");
+.issue-imgs .compare:last-child .cybervision-issue3-img {
+  width: 25%;
+  margin-left: 75%;
 }
 
 /* #endregion */
-/* #region Retrain Back Pain */
-.retrainbackpain-live1, .retrainbackpain-org1 {
+/* #region Allen's Pie */
+.allenspie-live1, .allenspie-org1 {
   background-position: top;
 }
 
-.retrainbackpain-org1 {
-  background-image: url("https://snz04pap002files.storage.live.com/y4murRa-Mm4RNU8gSfxB4u9mhCO8vPfONBomWvocmhehdawJyIQrJ1q6D353XIjHC7ynm0d1L7CDT5qvQU8G5jLImftKQBDejSRPT7NwwbQSqgyCKzpuadA8kQIS0hu4LwYeNbsI4MqOLDyecWUrhL8XMQl4czo9y4Ppbz88VUUDQNcyncBOxglj9FO2xdnK55h?width=660&height=411&cropmode=none");
+.allenspie-org1 {
+  background-image: url("https://snz04pap002files.storage.live.com/y4mfTVUD67dwZfXwzkZdkiFhpJJlX7vNFspgChvoMHtx_0duJtJi0_GcTI_GwsQ7WQPzaVjIZLS0jGsqy6PXe5yREkjHBGmz6DXgOrzZu9ibuQ0slK8fy99phhQOXdu4JTx2U7NRJaZCrHd60cphaZ-jQNSLaqyEjhqQjYOtvHKX3ILLXpdi6AdXzGbjTcc_SC-?width=660&height=403&cropmode=none");
 }
 
-.retrainbackpain-live1 {
-  background-image: url("https://snz04pap002files.storage.live.com/y4mCHOOFQrjcpSJrEc8-lZ95DWmLwLDzbYs4ty6BX3bxSD_5eVpmFUdg2Z6SfSPD8VPNi4_Psl9rFBE5v9V8FB3KH_QnVRaXtk71ZWMu46_ON078LaalA_t929zfBtT1VM_3u0vwXY8dIK0UUwCludTomnoZblUTvii2gJJTm94LYRkOEhcK3Gu4Yl9EQQCUO6H?width=660&height=411&cropmode=none");
+.allenspie-live1 {
+  background-image: url("https://snz04pap002files.storage.live.com/y4mjTh-14fI7-k2hIurVFr_Cw2eMwoeqfjZFmCJDtmsCLPUq6YICgSnIS2KSoPmHPVFzmtmTXD9IGvWO0pw7nU1wQRNshNhcMXx1rMuInkuoWLIhEwmcSqgnPj8JRbMJ2mBnnzK2WCLA6BKebXk3fqw8uUM0eP2uh6uR4LKBwOwsCbPhEStACjDE9e4ryEQzeDw?width=660&height=408&cropmode=none");
 }
 
-.retrainbackpain-live2, .retrainbackpain-org2 {
+.allenspie-live2, .allenspie-org2 {
   background-position: center;
 }
 
-.retrainbackpain-org2 {
-  background-image: url("https://snz04pap002files.storage.live.com/y4murRa-Mm4RNU8gSfxB4u9mhCO8vPfONBomWvocmhehdawJyIQrJ1q6D353XIjHC7ynm0d1L7CDT5qvQU8G5jLImftKQBDejSRPT7NwwbQSqgyCKzpuadA8kQIS0hu4LwYeNbsI4MqOLDyecWUrhL8XMQl4czo9y4Ppbz88VUUDQNcyncBOxglj9FO2xdnK55h?width=660&height=411&cropmode=none");
+.allenspie-org2 {
+  background-image: url("https://snz04pap002files.storage.live.com/y4mfTVUD67dwZfXwzkZdkiFhpJJlX7vNFspgChvoMHtx_0duJtJi0_GcTI_GwsQ7WQPzaVjIZLS0jGsqy6PXe5yREkjHBGmz6DXgOrzZu9ibuQ0slK8fy99phhQOXdu4JTx2U7NRJaZCrHd60cphaZ-jQNSLaqyEjhqQjYOtvHKX3ILLXpdi6AdXzGbjTcc_SC-?width=660&height=403&cropmode=none");
 }
 
-.retrainbackpain-live2 {
-  background-image: url("https://snz04pap002files.storage.live.com/y4mCHOOFQrjcpSJrEc8-lZ95DWmLwLDzbYs4ty6BX3bxSD_5eVpmFUdg2Z6SfSPD8VPNi4_Psl9rFBE5v9V8FB3KH_QnVRaXtk71ZWMu46_ON078LaalA_t929zfBtT1VM_3u0vwXY8dIK0UUwCludTomnoZblUTvii2gJJTm94LYRkOEhcK3Gu4Yl9EQQCUO6H?width=660&height=411&cropmode=none");
+.allenspie-live2 {
+  background-image: url("https://snz04pap002files.storage.live.com/y4mjTh-14fI7-k2hIurVFr_Cw2eMwoeqfjZFmCJDtmsCLPUq6YICgSnIS2KSoPmHPVFzmtmTXD9IGvWO0pw7nU1wQRNshNhcMXx1rMuInkuoWLIhEwmcSqgnPj8JRbMJ2mBnnzK2WCLA6BKebXk3fqw8uUM0eP2uh6uR4LKBwOwsCbPhEStACjDE9e4ryEQzeDw?width=660&height=408&cropmode=none");
 }
 
-.retrainbackpain-live3, .retrainbackpain-org3 {
+.allenspie-live3, .allenspie-org3 {
   background-position: bottom;
 }
 
-.retrainbackpain-org3 {
-  background-image: url("https://snz04pap002files.storage.live.com/y4murRa-Mm4RNU8gSfxB4u9mhCO8vPfONBomWvocmhehdawJyIQrJ1q6D353XIjHC7ynm0d1L7CDT5qvQU8G5jLImftKQBDejSRPT7NwwbQSqgyCKzpuadA8kQIS0hu4LwYeNbsI4MqOLDyecWUrhL8XMQl4czo9y4Ppbz88VUUDQNcyncBOxglj9FO2xdnK55h?width=660&height=411&cropmode=none");
+.allenspie-org3 {
+  background-image: url("https://snz04pap002files.storage.live.com/y4mfTVUD67dwZfXwzkZdkiFhpJJlX7vNFspgChvoMHtx_0duJtJi0_GcTI_GwsQ7WQPzaVjIZLS0jGsqy6PXe5yREkjHBGmz6DXgOrzZu9ibuQ0slK8fy99phhQOXdu4JTx2U7NRJaZCrHd60cphaZ-jQNSLaqyEjhqQjYOtvHKX3ILLXpdi6AdXzGbjTcc_SC-?width=660&height=403&cropmode=none");
 }
 
-.retrainbackpain-live3 {
-  background-image: url("https://snz04pap002files.storage.live.com/y4mCHOOFQrjcpSJrEc8-lZ95DWmLwLDzbYs4ty6BX3bxSD_5eVpmFUdg2Z6SfSPD8VPNi4_Psl9rFBE5v9V8FB3KH_QnVRaXtk71ZWMu46_ON078LaalA_t929zfBtT1VM_3u0vwXY8dIK0UUwCludTomnoZblUTvii2gJJTm94LYRkOEhcK3Gu4Yl9EQQCUO6H?width=660&height=411&cropmode=none");
+.allenspie-live3 {
+  background-image: url("https://snz04pap002files.storage.live.com/y4mjTh-14fI7-k2hIurVFr_Cw2eMwoeqfjZFmCJDtmsCLPUq6YICgSnIS2KSoPmHPVFzmtmTXD9IGvWO0pw7nU1wQRNshNhcMXx1rMuInkuoWLIhEwmcSqgnPj8JRbMJ2mBnnzK2WCLA6BKebXk3fqw8uUM0eP2uh6uR4LKBwOwsCbPhEStACjDE9e4ryEQzeDw?width=660&height=408&cropmode=none");
 }
 
 /* #endregion */
@@ -247,6 +272,11 @@ header .header-content {
 /* #endregion */
 /* #endregion */
 /*#region CLOSE */
+.more-info p {
+  font-size: 12px;
+  padding: 0 1.5em;
+}
+
 /* #endregion */
 /* #endregion */
 /* #region SOCIAL ICONS */

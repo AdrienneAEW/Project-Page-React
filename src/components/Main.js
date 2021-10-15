@@ -3,20 +3,24 @@ import projects from './Projects';
 import logos from './Logos';
 import '../App.css';
 
+let adrienneAEWEmail = <a href="mailto:adrienne@adrienneaew.me" title="E-mail me." aria-label="E-mail me."><i className="bi bi-envelope-open-fill"></i> E-mail</a>
 
+let adrienneContactForm = <a href="https://adrienneaew.me/AEWForms/ContactSass/adrienneAEW.html" title="Contact me via contact form." aria-label="Contact me via contact form."><i className="bi bi-book-half"></i> Contact</a>
+
+let adrienneAEWPortfolio = <a href="https://adrienneaew.me/Portfolios/AEWPortfolio/AEWPortfolio.html" title="View My Portfolio" aria-label="View My Portfolio"><i className="bi bi-hdd-stack-fill"></i> Contact</a>
 
 const Specs = (props) => {
     const specifications = props.specsData.map((spec, index) => {
         return (
-            <div key={index}>
-                <div><strong>Fonts:</strong> {spec.fonts}</div>
-                <div><strong>Icons:</strong> {spec.icons}</div>
-                <div><strong>Images:</strong> {spec.images}</div>
-                <div><strong>Colors:</strong> &nbsp;{spec.colors}</div>
+            <div key={index} className="project-specs">
+                <div className="spec-container"><strong>Fonts:</strong> {spec.fonts}</div>
+                <div className="spec-container"><strong>Icons:</strong> {spec.icons}</div>
+                <div className="spec-container"><strong>Images:</strong> {spec.images}</div>
+                <div className="spec-container"><strong>Colors:</strong> &nbsp;{spec.colors}</div>
             </div>
         )
     })
-    return <div className="project-specs"><h3>Project Specs</h3> {specifications}</div>
+    return <div className="project-specs"><h2>Project Specs</h2> {specifications}</div>
 }
 
 export default class Main extends Component {
@@ -44,8 +48,8 @@ export default class Main extends Component {
     projectTwo() {
         this.setState({
             Ind: 1,
-            origfull: 'https://1drv.ms/u/s!AsShLFW0DLmuhMA-5Ixno-jFkHC7NA',
-            livefull: 'https://1drv.ms/u/s!AsShLFW0DLmuhMA9dqIdMwYlV3IBZw'
+            origfull: 'https://1drv.ms/u/s!AsShLFW0DLmuhot1W7MpwckFE5OtdA',
+            livefull: 'https://1drv.ms/u/s!AsShLFW0DLmuhot0q58HNZ56D2dHOw'
         })
     }
 
@@ -80,83 +84,95 @@ export default class Main extends Component {
                     <button type="button" className="btn btn-group-small btn-outline-dark btn-group-small project-btn" title={projects[2].navtitle} aria-label={projects[2].navtitle} aria-pressed="true" onClick={this.projectThree}>{projects[2].prjbtn}</button>
                 </div>
             </div>
-            <div className="row project-open">
-                <div className="col-4 open-left">
-                    <figure className="project-img-container">
-                        <a href={this.state.origfull} title="View this image at full size." aria-label="View the full size image.">
-                            <img src={projects[this.state.Ind].imgorg} className="project-img project-org-img img-thumbnail" alt={projects[this.state.Ind].altorg} />
-                        </a>
-                        <figcaption className="project-caption">
-                            <a href={projects[this.state.Ind].original} title={projects[this.state.Ind].titleorg} alt={projects[this.state.Ind].altorg} aria-label="Visit the original website.">{projects[this.state.Ind].captionorg}</a>
-                        </figcaption>
-                    </figure>
+            <div className="row justify-content-center project-open">
+                <div className="col-5 align-self-center project-description">
+                     <h2>Project Overview</h2>
+                    {projects[this.state.Ind].description}
+                </div>               
+                
+                <figure className="col-md-3 align-self-center open-left project-img-container">
+                    <a href={this.state.origfull} title="View this image at full size." aria-label="View the full size image.">
+                        <img src={projects[this.state.Ind].imgorg} className="project-img project-org-img img-thumbnail" alt={projects[this.state.Ind].altorg} />
+                    </a>
+                    <figcaption className="project-caption">
+                        <a href={projects[this.state.Ind].original} title={projects[this.state.Ind].titleorg} alt={projects[this.state.Ind].altorg} aria-label="Visit the original website.">{projects[this.state.Ind].captionorg}</a>
+                    </figcaption>
+                </figure>
 
-                    <figure className="project-img-container">
-                        <a href={this.state.livefull} title="View the image at full size." aria-label="View the full size.">
-                            <img src={projects[this.state.Ind].imglive} className="project-img project-live-img img-thumbnail" alt={projects[this.state.Ind].altlive} />
-                        </a>
+                <figure className="col-md-3 align-self-center open-right project-img-container">
+                    <a href={this.state.livefull} title="View the image at full size." aria-label="View the full size.">
+                        <img src={projects[this.state.Ind].imglive} className="project-img project-live-img img-thumbnail" alt={projects[this.state.Ind].altlive} />
+                    </a>
                     <figcaption className="project-caption">
                         <a href={projects[this.state.Ind].live} title={projects[this.state.Ind].titlelive} aria-label="Visit the live project page.">{projects[this.state.Ind].captionlive}</a>
                     </figcaption>
                 </figure>
-                </div>
-                <div className="col-8 open-right">
-                    <h2>About This Project &mdash; {projects[this.state.Ind].name}</h2>
-                    {projects[this.state.Ind].description}
+            </div>
+
+            <div className="row">
+                <div className="col-md-7 open-specs">
                     <Specs specsData={projects[this.state.Ind].specs} />
+                </div>
+                <div className="col-md-5 project-role">
+                    <h2>My Role</h2>
+                    <p>This project were created and designed by me. The redesigns are an opportunity to put into practice my UX and design training. As the site owners are not consulted about, nor have approved, the updates &mdash; I stick to basics. Updates are based on information architecture, ease of use and creating a more inviting user experience. The main focus is on constructing elements that can be scaled, are accessible and assist with conversions.</p>
                 </div>
             </div>
 
-            <div id="project-issues" className="issue-details">
+            <div id="project-issues" className="row issue-details">
                 <h2>Issues and Solutions</h2>
                 <div className="card issue-detail detail1">
-                    <div className="row">
-                        <div className="col-sm-2 col-md-4">
-                            <figure className={projects[this.state.Ind].issue1org}></figure>
-                            <figure className={projects[this.state.Ind].issue1live}></figure>
-                        </div>
-
-                        <div className="col-sm-10 col-md-8 card-body">
-                            <p className="card-title">{projects[this.state.Ind].issue1title}</p>
-                            <p className="card-text">{projects[this.state.Ind].issue1note}</p>
-                        </div>
-                        </div>
-                </div>
-
-                <div className="card issue-detail detail2">
-                    <div className="row">
-                        <div className="col-sm-2 col-md-5">
-                            <figure className={projects[this.state.Ind].issue2org}></figure>
-                            <figure className={projects[this.state.Ind].issue2live}></figure>
+                    <div className={projects[this.state.Ind].issueimgs1class}>
+                        <div className="col-sm-2 col-md-5 issue-imgs">
+                            <figure className="compare">
+                                <img src={projects[this.state.Ind].issue1org} className={projects[this.state.Ind].issue1class} alt="Issue 1 Original" />
+                            </figure>
+                            <figure className="compare">
+                                <img src={projects[this.state.Ind].issue1live} className={projects[this.state.Ind].issue1class} alt="Issue 1 Project" />
+                            </figure>
                         </div>
 
                         <div className="col-sm-10 col-md-7 card-body">
-                            <p className="card-title">{projects[this.state.Ind].issue2title}</p>
-                            <p className="card-text">{projects[this.state.Ind].issue2note}</p>
+                            <h3 className="card-title">{projects[this.state.Ind].issue1title}</h3>
+                            {projects[this.state.Ind].issue1note}
                         </div>
-                        
                     </div>
+                </div>
 
+                <div className="card issue-detail detail2">
+                    <div className={projects[this.state.Ind].issueimgs2class}>
+                        <div className="col-sm-2 col-md-5 issue-imgs">
+                            <figure className="compare">
+                                <img src={projects[this.state.Ind].issue2org} className={projects[this.state.Ind].issue2class} alt="Issue 2 Original" />
+                            </figure>
+                            <figure className="compare">
+                                <img src={projects[this.state.Ind].issue2live} className={projects[this.state.Ind].issue2class} alt="Issue 2 Project" />
+                            </figure>
+                        </div>
+
+                        <div className="col-sm-10 col-md-7 card-body">
+                            <h3 className="card-title">{projects[this.state.Ind].issue2title}</h3>
+                            {projects[this.state.Ind].issue2note}
+                        </div>
+                    </div>
                 </div>
 
                 <div className="card issue-detail detail3">
+                    <div className={projects[this.state.Ind].issueimgs3class}>
+                        <div className="col-sm-3 col-md-5 issue-imgs">
+                            <figure className="compare">
+                                <img src={projects[this.state.Ind].issue3org} className={projects[this.state.Ind].issue3class} alt="Issue 3 Original" />
+                            </figure>
+                            <figure className="compare">
+                                <img src={projects[this.state.Ind].issue3live} className={projects[this.state.Ind].issue3class} alt="Issue 3 Project" />
+                            </figure>
+                        </div>
 
-                    <div>
-                        <div className="row">
-                            <div className="col-sm-2 col-md-5">
-                                <figure className={projects[this.state.Ind].issue3org}></figure>
-                                <figure className={projects[this.state.Ind].issue3live}></figure>
-                            </div>
-
-                            <div className="col-sm-10 col-md-7 card-body">
-                                <p className="card-title">{projects[this.state.Ind].issue3title}</p>
-                                <p className="card-text">{projects[this.state.Ind].issue3note}</p>
-                            </div>
+                        <div className="col-sm-10 col-md-7 card-body">
+                            <h3 className="card-title">{projects[this.state.Ind].issue3title}</h3>
+                            {projects[this.state.Ind].issue3note}
                         </div>
                     </div>
-                    
-
-                    
                 </div>
             </div>
 
@@ -164,7 +180,7 @@ export default class Main extends Component {
                 <h2 className="col-12">More Info</h2>
                 <div className="col-md-4 more-info">
                     <h3>Additional Notes</h3>
-                    <p>{projects[this.state.Ind].addnotes}</p>
+                    {projects[this.state.Ind].addnotes}
                 </div>
                 <div className="col-md-4 prj-cta">
                     <h3>Call To Action</h3>
@@ -173,9 +189,9 @@ export default class Main extends Component {
                 <div className="col-md-4 contact-section">
                     <h3>Contact Me</h3>
                     <ul className="contact-info-list">
-                        <li><i className="bi bi-envelope-open-fill"></i> Email</li>
-                        <li><i className="bi bi-book-half"></i> Portfolio</li>
-                        <li><i className="bi bi-hdd-stack-fill"></i> Contact Form</li>
+                        <li>{adrienneAEWEmail}</li>
+                        <li>{adrienneAEWPortfolio}</li>
+                        <li>{adrienneContactForm}</li>
                     </ul>
                 </div>
             </div>
