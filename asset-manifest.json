@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Project-Page-React/static/css/main.1d178b0f.chunk.css",
-    "main.js": "/Project-Page-React/static/js/main.f26cf415.chunk.js",
-    "main.js.map": "/Project-Page-React/static/js/main.f26cf415.chunk.js.map",
+    "main.css": "/Project-Page-React/static/css/main.c663ef5a.chunk.css",
+    "main.js": "/Project-Page-React/static/js/main.6e954c01.chunk.js",
+    "main.js.map": "/Project-Page-React/static/js/main.6e954c01.chunk.js.map",
     "runtime-main.js": "/Project-Page-React/static/js/runtime-main.5b850e4c.js",
     "runtime-main.js.map": "/Project-Page-React/static/js/runtime-main.5b850e4c.js.map",
     "static/js/2.59b8d732.chunk.js": "/Project-Page-React/static/js/2.59b8d732.chunk.js",
     "static/js/2.59b8d732.chunk.js.map": "/Project-Page-React/static/js/2.59b8d732.chunk.js.map",
     "index.html": "/Project-Page-React/index.html",
-    "static/css/main.1d178b0f.chunk.css.map": "/Project-Page-React/static/css/main.1d178b0f.chunk.css.map",
+    "static/css/main.c663ef5a.chunk.css.map": "/Project-Page-React/static/css/main.c663ef5a.chunk.css.map",
     "static/js/2.59b8d732.chunk.js.LICENSE.txt": "/Project-Page-React/static/js/2.59b8d732.chunk.js.LICENSE.txt",
     "static/media/AllensPie-Colors.79747ed5.png": "/Project-Page-React/static/media/AllensPie-Colors.79747ed5.png",
     "static/media/Cybervision-Colors.e66c1382.png": "/Project-Page-React/static/media/Cybervision-Colors.e66c1382.png",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.5b850e4c.js",
     "static/js/2.59b8d732.chunk.js",
-    "static/css/main.1d178b0f.chunk.css",
-    "static/js/main.f26cf415.chunk.js"
+    "static/css/main.c663ef5a.chunk.css",
+    "static/js/main.6e954c01.chunk.js"
   ]
 }
