@@ -50,7 +50,6 @@ html {
 body {
     font-family: $body-font;
     color: $body-dark;
-    background-color: $bg-body;
     letter-spacing: 1px;
     line-height: 1.5em;
 }
@@ -108,6 +107,12 @@ a {
 .no-go {
     cursor: not-allowed;
 }
+
+.project-app-container {
+    background-color: $bg-body;
+    padding-left: 0;
+    padding-right: 0;
+}
 /*#endregion*/
 
 
@@ -132,17 +137,23 @@ header {
     position: absolute;
     display: flex;
     align-items: center;
-    width: 15%;
+    width: 125px;
     bottom: 0;
     right: 1em;
     font-size: .7em;
-
+    
     a {
+        text-decoration: none;
+        font-weight: 600;
         color: $accent2;
     }
 
     .logo-img {
-        width: 20%;
+        width: 25px;
+        height: 25px;
+        background-color: $accent2;
+        padding: 1px;
+        border-radius: 50%;
     }
 }
 /* #endregion */
@@ -152,11 +163,21 @@ header {
     padding: 28px 0 36px;
 }
 
-/* #region ABOUT*/
 
+
+/* #region ABOUT*/
+.project-img-container {
+    text-align: center;
+}
 
 .project-img {
-    width: 100%;
+    width: 70%;
+    background-color: $standard-body;
+    border: 2px solid $accent1;
+}
+
+.project-caption {
+    margin-top: 8px;
 }
 
 
@@ -171,6 +192,10 @@ header {
     p {
         margin-bottom: 0;
     }
+
+    .spec-detail-sublist {
+        padding-left: .8em;
+    }
 }
 
 .project-palette {
@@ -181,6 +206,8 @@ header {
 /* #region ISSUE DETAILS */
 .issue-details {
     background-color: $standard-body;
+    margin-left: auto;
+    margin-right: auto;
 
     .card {
         background-color: transparent;
@@ -197,6 +224,10 @@ header {
 .issue-content {
     padding-left: 1em;
     padding-right: 3em;
+}
+
+.issue-imgs {
+    align-self: center;
 }
 
 .issue-img {

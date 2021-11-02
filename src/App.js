@@ -62,7 +62,7 @@ export default class App extends Component {
         ]
 
         return (
-            <div className="app-container">
+            <div className="project-app-content">
                 <Main />
                 <Footer socialData={socialLinks} projectsData={projects} />
             </div>

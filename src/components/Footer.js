@@ -4,6 +4,7 @@ import '../App.css';
 
 let dateNow = new Date();
 let yearNow = dateNow.getFullYear();
+//ADD PROJECT PAGE CREDITS TO FOOTER let boostrap5 = <a href='https://getbootstrap.com/docs/5.0/getting-started/introduction/' target="_blank" rel="noreferrer" title="Learn more Bootstrap Front-end Open Source Toolkit." aria-label="Learn more Bootstrap Front-end Open Source Toolkit.">Boostrap 5.0</a>
 
 const SocialBody = (props) => {
     const socialItems = props.socialData.map((socialItem, index) => {
@@ -35,12 +36,10 @@ class LogoContainer extends Component {
                     <img src={this.props.img} className={this.props.logoclass} alt={this.props.alt} />
                     <span className="logo-text">{this.props.site}<sup><span className="copyright-date"><i className="far fa-copyright">&nbsp;{yearNow}</i></span></sup></span>
                 </a>
-            
             </div>
         )
     }
 }
-
 
 export default class Footer extends Component {
      
@@ -48,16 +47,13 @@ export default class Footer extends Component {
         const {socialData, projectsData} = this.props
         
 
-        return (
-
-            
+        return (            
             <footer>
                 <LogoContainer link={logos[0].link} title={logos[0].title} img={logos[0].img} logoclass={logos[0].logoclass} alt={logos[0].alt} site={logos[0].site} />
                                 
                 <SocialBody socialData={socialData} />
 
                 <FooterLinks projectsData={projectsData} />
-
                 
             </footer>
         )
