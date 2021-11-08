@@ -3,11 +3,14 @@ import projects from './Projects';
 import logos from './Logos';
 import '../App.css';
 
-let adrienneAEWEmail = <a href="mailto:adrienne@adrienneaew.me" title="E-mail me." aria-label="E-mail me."><i className="bi bi-envelope-open-fill"></i> E-mail</a>
+let adrienneAEWEmail = <a href="mailto:adrienne@adrienneaew.me" title="E-mail me" aria-label="E-mail me."><i className="bi bi-envelope-open-fill"></i> E-mail</a>
 
-let adrienneContactForm = <a href="https://adrienneaew.me/AEWForms/ContactSass/adrienneAEW.html" title="Contact me via contact form." aria-label="Contact me via contact form."><i className="bi bi-book-half"></i> Contact</a>
+let adrienneContactForm = <a href="https://adrienneaew.me/AEWForms/ContactSass/adrienneAEW.html" title="Contact me via contact form" aria-label="Contact me via contact form."><i className="bi bi-pencil-square"></i> Contact</a>
 
-let adrienneAEWPortfolio = <a href="https://adrienneaew.me/Portfolios/AEWPortfolio/AEWPortfolio.html" title="View My Portfolio" aria-label="View My Portfolio"><i className="bi bi-hdd-stack-fill"></i> Portfolio</a>
+let adrienneAEWPortfolio = <a href="https://adrienneaew.me/Portfolios/AEWPortfolio/AEWPortfolio.html" title="View My Portfolio" aria-label="View My Portfolio"><i className="bi bi-briefcase-fill"></i> Portfolio</a>
+
+let adrienneAEWDesigner = <a href="https://adrienneaew.me/DesignerResume/AEWDesigner.html" title="View My Online Designer Resume" aria-label="View My Online Designer Resume"><i className="bi bi-person-lines-fill"></i> Resume</a>
+
 
 
 const Specs = (props) => {
@@ -77,7 +80,7 @@ export default class Main extends Component {
                     </a>
                 </figure>
             </header>
-            <div className="row project-nav">
+            <div className="row project-nav sticky-top">
                 <h5 className="col-1">Projects: </h5>
                 <div className="col-5 btn-group project-btn-container" role="group" aria-label="Projects Menu">
                     <button type="button" className="btn btn-outline-dark btn-group-small project-btn" aria-label={projects[0].navtitle} aria-pressed="true" title={projects[0].navtitle} onClick={this.projectOne}>{projects[0].prjbtn}</button>
@@ -87,7 +90,7 @@ export default class Main extends Component {
             </div>
             
             <div className="row justify-content-center project-open">
-                <div className="col-5 align-self-center project-description">
+                <div className="col-md-5 align-self-center project-description">
                      <h2>Project Overview</h2>
                     {projects[this.state.Ind].description}
 
@@ -100,7 +103,7 @@ export default class Main extends Component {
                         <img src={projects[this.state.Ind].imgorg} className="project-img project-org-img img-thumbnail" alt={projects[this.state.Ind].altorg} />
                     </a>
                     <figcaption className="project-caption">
-                        <a href={projects[this.state.Ind].original} title={projects[this.state.Ind].titleorg} alt={projects[this.state.Ind].altorg} aria-label="Visit the original website.">{projects[this.state.Ind].captionorg}</a>
+                        <a href={projects[this.state.Ind].original} target="_blank" rel="noreferrer" title={projects[this.state.Ind].titleorg} alt={projects[this.state.Ind].altorg} aria-label="Visit the original website.">{projects[this.state.Ind].captionorg}</a>
                     </figcaption>
                 </figure>
 
@@ -114,7 +117,7 @@ export default class Main extends Component {
                 </figure>
             </div>
 
-            <div className="row">
+            <div className="row project-open-specs">
                 <div className="col-md-7 open-specs">
                     <Specs specsData={projects[this.state.Ind].specs} />
                 </div>
@@ -189,10 +192,12 @@ export default class Main extends Component {
                 <h2 className="col-12">More Info</h2>
                 <div className="col-md-5 more-info">
                     <h4>Additional Notes</h4>
+                    <p><em>updates/issues noted but not addressed in the project</em></p>
                     {projects[this.state.Ind].addnotes}
                 </div>
                 <div className="col-md-4 project-tools">
                     <h4>Tools Used</h4>
+                    <p><em>tools/resources used in building this project</em></p>
                     {projects[this.state.Ind].projecttools}
                 </div>
                 <div className="col-md-3 contact-section">
@@ -201,6 +206,7 @@ export default class Main extends Component {
                         <li>{adrienneAEWEmail}</li>
                         <li>{adrienneContactForm}</li>
                         <li>{adrienneAEWPortfolio}</li>
+                        <li>{adrienneAEWDesigner}</li>
                     </ul>
                 </div>
             </div>

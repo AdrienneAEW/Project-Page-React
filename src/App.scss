@@ -79,7 +79,7 @@ img {
 .btn {
     padding: 8px;
     font-weight: 700;
-    text-transform: uppercase;
+    font-variant: small-caps;
     letter-spacing: .035em;
 }
 
@@ -158,11 +158,27 @@ header {
 }
 /* #endregion */
 
+.project-nav {
+    background-color: $body-light;
+    margin-left: 6px;
+    margin-right: 28px;
+    h5 {
+        font-family: $body-font;
+        font-weight: 700;
+        font-variant: small-caps;
+        align-self: center;
+        margin-right: 60px;
+    }
+}
+
 /* #region MAIN */
-.project-open, .issue-details, .project-close {
+.project-open, .issue-details {
     padding: 28px 0 36px;
 }
 
+.project-description {
+    padding: 36px 36px 36px 68px;
+}
 
 
 /* #region ABOUT*/
@@ -180,6 +196,12 @@ header {
     margin-top: 8px;
 }
 
+.project-open-specs {
+    padding: 0 28px 28px;
+}
+.open-specs, .project-role {
+    padding: 0 36px;
+}
 
 .spec-container {
     margin-left: 1em;
@@ -201,7 +223,10 @@ header {
 .project-palette {
     width: 65%;
 }
+
+
 /* #endregion */
+
 
 /* #region ISSUE DETAILS */
 .issue-details {
@@ -222,7 +247,7 @@ header {
 }
 
 .issue-content {
-    padding-left: 1em;
+    padding-left: 3em;
     padding-right: 3em;
 }
 
@@ -340,11 +365,35 @@ header {
 
 
 /*#region CLOSE */
-.more-info {
+.project-close {
+    padding: 8px 0 28px;
+
+    h2 {
+        padding-left: 24px;
+    }
+}
+
+.more-info, .project-tools {
+
+
     p {
         font-size: 12px;
         padding: 0 1.5em;
     }
+}
+
+.more-info, .project-tools, .contact-section {
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.project-tools {
+    border-left: 1px solid $footer-text;
+    border-right: 1px solid $footer-text;
+}
+
+.contact-info-list {
+    list-style-type: none;
 }
 /* #endregion */
 
@@ -389,7 +438,8 @@ header {
 /* #region FOOTER */
 footer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: $body-dark;
     color: $footer-text;
@@ -407,7 +457,7 @@ footer {
     }
 
     .logo-container {
-        width: 15%;
+        width: auto;
         font-size: .7em;
         display: flex;
 
@@ -417,6 +467,10 @@ footer {
     
         .logo-img {
             width: 20%;
+            background-color: $accent2;
+            padding: 3px;
+            border-radius: 50%;
+            margin-right: 5px;
         }
     
     }
@@ -424,7 +478,45 @@ footer {
     .social-links-container {
         width: auto;
         text-align: center;
-        
+        margin: 1em 0;
+    }
+
+    .aew-social-link i.fab {
+        padding: 6px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+        color: $accent-light;
+        font-size: 16px;
+    }
+
+    .aew-social-link .fa-linkedin-in {
+        background-color: #0077B5;
+        }
+
+    .aew-social-link .fa-twitter {
+        background-color: #1da1f2;
+    }
+
+    .aew-social-link .fa-slideshare {
+        background-color: #0077B5;
+    }
+
+    .aew-social-link .fa-free-code-camp {
+        background-color: darkgreen;
+    }
+
+    .aew-social-link .fa-youtube {
+        background-color: #CD201F;
+    }
+
+    .aew-social-link .fa-github {
+        background-color:#24292e;
+    }
+
+    .aew-social-link .fa-behance-square {
+        background-color: #0057FF;
     }
 
     .footer-text {
@@ -437,6 +529,30 @@ footer {
     
 }
 /* #endregion */
+
+@media screen and (min-width: 768px) {
+    .project-nav {
+        h5 {
+            margin-right: 12px;
+        }
+    }
+
+    .project-description {
+        padding: 12px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .social-links-container {
+            margin: 0;
+        }
+    }
+
+
+
+}
 
 @media print {
 	.print, #aedubyah-print-footer.print {

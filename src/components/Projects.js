@@ -29,16 +29,16 @@ const projects = [
             { 
                 fonts: <div className="spec-detail">
                     <p><em>Orignal</em> and <em>Project</em> sites use the same <a href="https://fonts.google.com/share?selection.family=Frank%20Ruhl%20Libre%7CKarla%7COswald" target="_blank" rel="noreferrer" title="View Font Specimens" aria-label="View Font Specimens">typeface</a>:</p>
-                    <p className="spec-detail-sublist"><em><b>Page Headings</b></em>: Oswald, sans-serif</p>
-                    <p className="spec-detail-sublist"><em><b>Body Headings</b></em>: Frank Ruhl Libre, serif</p>
+                    <p className="spec-detail-sublist"><em><b>Page Title</b></em>: Oswald, sans-serif</p>
+                    <p className="spec-detail-sublist"><em><b>Headings</b></em>: Frank Ruhl Libre, serif</p>
                     <p className="spec-detail-sublist"><em><b>Body Text</b></em>: Karla, sans-serif</p>
                 </div>,
                 icons: <div className="spec-detail">
-                    <p><em>Original Site:</em> Uses theme icons.</p>
-                    <p><em>Project Site:</em> Uses {materialIcons}.</p>
+                    <p><em>Original Site:</em> Theme Icons</p>
+                    <p><em>Project Site:</em> {materialIcons}</p>
                 </div>,
                 images: <div className="spec-detail">
-                    <p><em>Project Site</em> images were sourced from the original page/website.</p>
+                    <p><em>Project:</em> images were sourced from the original website</p>
                 </div>,
                 colors: <img src={Cybervision} className="project-palette" alt="Cybervision Color Palette" title="Color palette created using Adobe Color" aria-label="Color palette created using Adobe Color" />
             }
@@ -62,19 +62,18 @@ const projects = [
         issue1class: 'issue-img issue1-img',
         issue1title: 'Page Header and Navbar',
         issue1note: <div className="issue-content">
-                <p className="issue-description">The link said bookings, but the page title is the name of the musician. There's not much that screams bookings here. It's more of a contact page. Which would be a more appropriate title for this page. The function of the page is to convert users to book a lesson. Or at the very least to inquiry about booking a lesson. To make the page self descriptive and more inviting to the user, we applied the following changes to the header:</p>
+                <p className="issue-description">The link label says bookings, but the page is titled &ldquo;Micheal C. Lewis&rdquo;. The page seems unfinished and haphazard; not at all inviting. A more appropriate title for this page, as is, would be &ldquo;Contact&rdquo;. The purpose of the page is for users to book or inquiry lessons. To make the page self descriptive and more inviting to the user, we...</p>
                 <ul className="issue-list">
-                    <li>changed the page title to reflect the page's purpose</li>
-                    <li>gave the social icons some breathing room so they are more accessible and visual</li>
+                    <li>changed the page title to reflect the page's purpose &mdash; made the header a hero</li>
                     <li>gave the navbar a new hierachy
                         <ul>
-                            <li>photo and video links fall under &ldquo;Media&rdquo;</li>
-                            <li>store link has been removed &mdash; the link opens a blank page &mdash; users can currently purchase albums under the &ldquo;Music&rdquo; link &mdash; this moots the need for a store, presently</li>
-                            <li>&ldquo;review&rdquo; was renamed &ldquo;press release&rdquo;and placed under &ldquo;Music&rdquo; link &mdash; &ldquo;press release&rdquo; was the only link under &ldquo;review&rdquo; &mdash; which means &ldquo;review&rdquo; was not a main category</li>
-                            <li>&ldquo;home&rdquo; is site logo &mdash; an easy way to reinforce branding</li>
+                            <li>placed &ldquo;photo and video&rdquo; links under &ldquo;Media&rdquo;</li>
+                            <li>removed &ldquo;store&rdquo; link &mdash; the store is a blank page &mdash; users can make purchases via a dropdown menu under the &ldquo;Music&rdquo; link</li>
+                            <li>&ldquo;review&rdquo; link was renamed &ldquo;press release &rdquo; and placed under &ldquo;Music&rdquo; link &mdash; there were no reviews and one press release</li>
+                            <li>the logo brands the navbar and acts as the &ldquo;home&rdquo; page link</li>
                         </ul>
                     </li>
-                    <li>the sidebar &#40;which opens a contact and log in form&#41; has been removed</li>
+                    <li>the sidebar has been removed &mdash; it contains a contact and log-in form &mdash; a hidden log-in is not user-friendly and one contact/booking form is enough</li>
                     
                 </ul>
             </div>,
@@ -84,13 +83,13 @@ const projects = [
         issue2class: 'issue-img issue2-img',
         issue2title: 'Content Layout',
         issue2note: <div className="issue-content">
-                <p className="issue-description">The layout lacks harmony. There's no connection between setions and elements. The form looks unfinished and is not inviting. White space is nice, but there is to much space between elements. This issues were addressed in our project by:</p>
+                <p className="issue-description">The layout lacks harmony. There's no connection between setions and elements. The form looks unfinished and is not at all inviting. The project brings some harmony to the page by...</p>
                 <ul className="issue-list">
-                    <li>grouping the form and contact info together</li>
-                    <li>adding a call-to-action title that describes the goal of the page</li>
-                    <li>highlighting the contact info and form as a group within a group</li>
+                    <li>creating a lay-out distinquishes the form and contact info</li>
+                    <li>pairing icons with labels to give users a visual and text definition</li>
+                    <li>adding a call-to-action title reinforcing the goal of the page</li>
                     <li>adding social links to the contact info</li>
-                    <li>using color to help guide the user flow and create a more appealing visual</li>
+                    <li>using color and elevation to guide the user flow and create a more appealing visual</li>
                 </ul>
             </div>,
         issue3org: CybervisionLogo,
@@ -108,9 +107,8 @@ const projects = [
                 </ul>
             </div>,
         addnotes: <ul className="add-note-list">
-            <li><strong>Footer:</strong> Text about footer</li>
-            <li><strong>Photo Gallery:</strong> text about photo gallery</li>
-            <li><strong>Events:</strong> text about events</li>
+            <li><strong>Calendar:</strong> adding a calendar to the bookings form is user-friendly &mdash; including a schedule of events could promote more user interaction</li>
+            <li><strong>Reviews:</strong> we renamed and repositioned this link &mdash; the page has been updated since the completion of our project &mdash; we would restore this link to its former placement</li>
         </ul>,
         projecttools: 
             <ul className="tools-list">
@@ -123,7 +121,7 @@ const projects = [
     {
         name: 'Allen\'s Pie',
         description: <div>
-            <p>Allen's Pie is an online Ecommerce site that sells home-made pies. The original &#40;&ldquo;landing&rdquo;&#41; page is so long we cut it in half to present a full page view. A parallax effect that opens the page is a great way to promote the product. And the pie looks delicious, revealed on scroll. So good in fact it made me hungry. Yet, the parallax is marred with size and placement issues. Overall, we liked the site and was exicted to take it on as a portfolio project.</p>
+            <p>Allen's Pie is an online Ecommerce site that sells home-made pies. The original &#40;&ldquo;landing&rdquo;&#41; page is so long we cut it in half to present a full page view. A parallax effect that opens the page is a great way to promote the product. And the pie looks delicious, revealed on scroll. So good in fact it made me hungry. Yet, the parallax is marred with size and placement issues. Overall, we liked the site and was exicted to take it on as a project.</p>
         </div>,
         prjbtn: 'Landing',
         specs: [
@@ -131,7 +129,7 @@ const projects = [
                 fonts: <div className="spec-detail">
                 
                     <p><em>Original Site</em>:</p>
-                    <p className="spec-detail-sublist"><a href="https://fonts.adobe.com/fonts/proxima-nova" target="_blank" rel="noreferrer" title="View Font Specimens" aria-label="View Font Specimens">Proxima Nova</a>, sans-serif and <a href="https://fonts.adobe.com/fonts/din-condensed" target="_blank" rel="noreferrer" title="View Font Sample" aria-label="View Font Sample">Din Condensed</a></p>
+                    <p className="spec-detail-sublist"><a href="https://fonts.adobe.com/fonts/proxima-nova" target="_blank" rel="noreferrer" title="View Font Specimens" aria-label="View Font Specimens">Proxima Nova</a>, sans-serif and <a href="https://fonts.adobe.com/fonts/din-condensed" target="_blank" rel="noreferrer" title="View Font Specimens" aria-label="View Font Specimens">Din Condensed</a></p>
                     <p><em>Project Site </em>:</p>
                     <p className="spec-detail-sublist"><b>Montserrat</b>, sans-serif and <b>Open Sans Condensed</b>, sans-serif <a href="https://fonts.google.com/share?selection.family=Montserrat%7COpen%20Sans%20Condensed:wght@300" target="_blank" rel="noreferrer" title="View Font Specimens" aria-label="View Font Specimens">typefaces</a></p>
                     
@@ -157,7 +155,7 @@ const projects = [
         captionorg: 'Original Page',
         captionlive: 'Project Page',
         navtitle: 'A landing page update.',
-        goals: <p>Our version keeps the parallax &#40;minus the awkward size&#92;placement&#41;, and cleans up the layout. We've reworked the testimonials to act as a sort of menu. Of course, we edited the content, resized the images and steamlined the site's information architecture. For a full description of this project's focus, visit the {issueSolution} section of this page.</p>,
+        goals: <p>Our version keeps the parallax &#40;minus the awkward size&#92;placement&#41;, and cleans up the layout. We've reworked the testimonials to act as a sort of menu. Of course, we edited the content, resized the images and steamlined the site's information architecture. Visit the {issueSolution} section for details.</p>,
         persona: <p title="A quote from the site owner." aria-label="A quote from the site owner.">&ldquo;<a href="https://www.alignable.com/harlem-new-york-ny/allens-pie-llc" title="Visist Allen's Pie Alignable Profile" aria-label="Visist Allen's Pie Alignable Profile" target="_blank" rel="noreferrer">Allen's Pie</a> is an small batch online pie shop based in Harlem. I bake and deliver each product throughout New York City and select surrounding areas.&rdquo;
         </p>,
         issue1org: 'https://snz04pap002files.storage.live.com/y4mHAcD8Cnrmf6H6gg6Yq80f5ZtEAPkCPauyQNDjVhtRKJYfMm5NoGnisT7Qpj2cbc553VgCvdnw9ns5wrerAu8dOYxQA5Wm8UwGIsF-QaVUBfdTbdHFIUXuMTXOlRnfyaBxA5ODGdn0ewDhNd6GsHEooskKeX09Vmb4jFOsu2GBTVLzYEvRgNmktXAko8IqtgL?width=660&height=251&cropmode=none',
@@ -170,7 +168,7 @@ const projects = [
                 <ul className="issue-list">
                     <li>pie link by removing it &mdash; since &ldquo;pie&rdquo; is the story &#40;not the only one, but a huge part of the story&#41; it deserves a stand&ndash;out section on the story page</li>
                     <li>the menu link destination was reconfigured &mdash; clicking it will scroll to a menu-isk section &mdash; we call it a &ldquo;testimonial menu&rdquo; &mdash; hovering over the menu link opens a dropdown &#40;same as original&#41; with a list of direct links to all product pages</li>
-                    <li>the cart link&#92;indicator has been added to the navbar &mdash; this way it won't get lost and maintenance a position of prominence &mdash; makes it real easy for the user to shop</li>
+                    <li>the cart link&#92;indicator has been added to the navbar &mdash; this way it won't get lost and maintains a position of prominence &mdash; makes it real easy for the user to shop</li>
                 </ul>
             </div>,
         issue2org: 'https://snz04pap002files.storage.live.com/y4m6VE8KpTVwNxF7R_MND6ZxwY4Bm_U1PPuH-A0gglDnAloBQbYYxWE37ExmxA8iBY3b5SpbRRUrrt5mFGj1oCjWJvtNhYm09eHrPkK1gpvUjndZGY1aBimAF7F48waTS3U9bkYTqekdtxRYdeyAKzr9tL6aCLjioaeXNBYL8KFmVdQQzMNyqaoaNX0yiyShQTF?width=660&height=406&cropmode=none',
@@ -181,9 +179,9 @@ const projects = [
         issue2note: <div className="issue-content">
                 <p className="issue-description">Who needs a menu when you have less then 10 products for sale? Okay 10 may not be the magic number I think it is, but one has to draw the line somewhere. There are about 4&ndash;6 pie fillings. Approximately 2 of these fillings are seasonal. A menu page is overkill. A waste of prime real estate. After all, the purpose of the site is to sell pies. A solution is to pair the product with a testimonial...</p>
                 <ul className="issue-list">
-                    <li>there isn't a menu page, per se, on the site &mdash; the landing page menu link takes you to the apple pie product page &mdash; a clear case of bad labeling &mdash; 0ur solution displays all the products on the front page &mdash; using the product image as a link to the product page;</li>
-                    <li>the testimonials toned down &mdash; text sized was reduced &mdash; given a colored background and border &mdash; each testimonial is the companion of a product it describes or closely describes;</li>
-                    <li>the menu link does double duty by linking to the &#40;menu&#41; and allowing the user to quickly scroll the page</li>
+                    <li>the sites menu page, if you can find it, is a paged filled with oversized images with barely visible text on top &mdash; the menu link on the home page opens a product page &mdash; a clear case of mislabeling &mdash; the project displays all the products on the landing page as a simple card &mdash; each card links to the specified product page;</li>
+                    <li>the testimonials' font-size was decreased &mdash; given a colored background and border &mdash; and paired as a companion of a product it describes or closely describes;</li>
+                    <li>the menu link quickly scrolls the page and still provides a handy dropdown with links to individual product pages</li>
                 </ul>
                 
             </div>,
@@ -193,11 +191,11 @@ const projects = [
         issue3class: 'issue-img issue3-img',
         issue3title: 'Parallax Effect',
         issue3note: <div className="issue-content">
-                <p className="issue-description">This is some yummy pie being sold on this site. There a sharp, quality photos of the product throughout the site. And then there's an opening parallax that introduces the product. As with much of the landing page, it's oversized and scrolls awkwardly. The project opens with a cleaned up parallax that:</p>
+                <p className="issue-description">Thanks to some quality images, the product looks yummy. And then there's an opening parallax that introduces the product. As with much of the landing page, it's oversized and scrolls awkwardly. The project opens with a cleaned up parallax that:</p>
                 <ul className="issue-list">
-                    <li>doesn't expose the entire image &mdashp; parallax works best when the image is revealed in sections &mdash; we start in the middle so as the user scrolls the product gets revealed;</li>
-                    <li>inserts introduction content on top of the parallax image so users know upfront what the site is about and has to offer;</li>
-                    <li>we elminated the second parallax to keep the page concise and managable</li>
+                    <li>doesn't expose the entire image &mdashp; parallax works best when the image is revealed in sections &mdash; we start in the middle &mdash; as the user scrolls the product gets revealed;</li>
+                    <li>inserts introduction content on top of the parallax image so users know upfront what the site is about and selling;</li>
+                    <li>there are two parallaxes on the landing page &mdash; we elminated the second parallax to keep the page concise and managable</li>
                 </ul>
             </div>,
         addnotes: <ul className="add-note-list">
@@ -208,7 +206,7 @@ const projects = [
         projecttools: <div>
             <ul className="tools-list">
                 <li>{sassCss}</li>
-                <li>HTML 5/JavaScript</li>
+                <li>HTML/JavaScript</li>
                 <li>{googleDesign} design system resources {materialIcons} and {googleFonts}</li>
                 <li><em>Color palette</em> created via logo upload to {adobeColor}</li>
             </ul>
@@ -247,7 +245,7 @@ const projects = [
         captionorg: 'Original Page',
         captionlive: 'Project Page',
         navtitle: 'A listing search and page update.',
-        goals: <p>The focus of this project was controlling user search results. The sites navbar lacked information architecture and the landing page had little accessibility functionality. Just how many clicks does it take to get a hit from the &#40;<em>quick search</em>&#41;? Lots. Not the most pleasing user experience. Our redesign sought to update the information architecture, simplify the quick search and include a direct link to the listings pages. View the {issueSolution} section of this page for details.</p>,
+        goals: <p>The focus of this project was controlling user search results. The sites navbar lacked information architecture and the landing page had little accessibility functionality. Just how many clicks does it take to get a hit from the &ldquo;<em>quick search</em>&rdquo;? Lots. Not the most pleasing user experience. Our redesign sought to update the information architecture, simplify the quick search and include a direct link to the listings pages. View the {issueSolution} section of this page for details.</p>,
         persona: <p title="A quote from the site owner." aria-label="A quote from the site owner.">&ldquo;Whether you’re a real estate buyer or seller, renter or developer&mdash;<a href="https://www.alignable.com/harlem-new-york-ny/perry-associates?source=--profile" title="Visist Perry Associates' Alignable Profile" aria-label="Visist Perry Associates' Alignable Profile" target="_blank" rel="noreferrer">Perry Associates</a> is here for you. We understand all the details involved, from property and site selection, negotiation and purchase to ownership, management, long- and short-term rentals—and even interior design.&rdquo;
         </p>,
         issue1org: 'https://snz04pap002files.storage.live.com/y4ml9JQOCRUbc0Ecfv73MnJ_gPcsQtZewW35gMsgBqOh7eP4Q2w8-oOC3aq9gAblwlTuEtSCrPisfJZpXEPoechbnDZerM8mOEKrl9D333XI_0Puj4KWUqpd1QW7x4ydLhcU4HvZIJDqlvQYzOb26eX_nZwIcbiHhjdt0WEY75vTvYDzSvEKqh2NitgMn-Mm3mE?width=610&height=293&cropmode=none',
@@ -256,11 +254,11 @@ const projects = [
         issue1class: 'issue-img issue1-img',
         issue1title: 'Quick Search',
         issue1note: <div className="issue-content">
-                <p className="issue-description">If your agency is a small operation; your property inventory is in the 100s, instead of the thousands; controlling how users search your listings is crucial. Let the inventory drive the search. Listing every geographical area you represent without inventory in those areas will result in user searches that end frustration. Our solution is to control the search based on inventory…</p>
+                <p className="issue-description">If your agency is a small operation; your property inventory is in the 100s, instead of the thousands. Not controlling how users search your listings will create unnecessary user pain points. Best to let the inventory drive the search. The project controls the search based on inventory and type. The project reduced...</p>
                 <ul className="issue-list">
-                    <li>too many options does not connote quick &mdash; we picked &ldquo;location&rdquo; and &ldquo;type&rdquo; &mdash; these options play an important role in user decision making when looking for property</li>
-                    <li>user input is controlled via dropdown menus that list only locations and types &#40;i.e.; rental, buy&#41; of properties in inventory - increasing the success of user searches 80% – 95%</li>
-                    <li>A search form with 4 inputs was added to the listings page &mdash; users can search via price and/or number of bedrooms &mdash; the rate users receiving a failed search message is higher &mdash; however these inputs returns results based on a range &mdash; user search success is approximately 70% - 90%</li>
+                    <li>the number of form inputs &mdash; 7 inputs does not connote &ldquo;quick&rdquo; &mdash; the project includes 2; &ldquo;location&rdquo; and &ldquo;type&rdquo; &mdash; remember it's all about the location with property</li>
+                    <li>user input is controlled via dropdown menus that list locations and types &#40;i.e.; rental, buy&#41; of properties that are in inventory only &mdash; increasing the success of user searches 80% – 90%</li>
+                    <li>A search form with 4 inputs was added to the listings page &mdash; users can search via 2 additional inputs &#40;price and/or bedrooms&#41; &mdash; adding these search optoins does increase the chance of a failed search &mdash; however these inputs returns results based on a range &mdash; user search success is approximately 70% - 85%</li>
                 </ul>
             </div>,
         issue2org: 'https://snz04pap002files.storage.live.com/y4mZlBJAb3F71sZmnGsnyauBqwpenZ0PLse4O4TFRJ4wVRe5XNmLkWn-J_r1OL5_5HfPaZ4om6WpxHI-p1bJHAoRw2kEXCAf8NkDr3bsSRdMVPL-aQP1yQJst7grBGnEWl6tlyXLg_QBVBL-7_6Gv-U1CTLXJa9LXQu8mOZfG7oVNN6Mgpdl7YgSwgRhuKA67IN?width=660&height=45&cropmode=none',
@@ -269,11 +267,11 @@ const projects = [
         issue2class: 'issue-img issue2-img',
         issue2title: 'Information Architecture',
         issue2note: <div className="issue-content">
-                <p className="issue-description">There is no direct link to the most important page on the site – the listings page. Instead, the navbar includes links to property categories (i.e.; residential, commercial). Clicking on these links will take you to page whose only content is the quick search form from the landing page. Listing these options in a dropdown under “Listings”  unclutters the navbar and creates user flow. Perry Associates has over scaled. They don’t have the inventory to support placing these property categories at the highest level.  Our recommendation would be to add these options as filters on the listings page. Considering user flow, we…</p>
+                <p className="issue-description">There is no direct link to the most important page on the site – the listings page. Instead, the navbar includes links to property categories (i.e.; residential, commercial). Following the link opens a page with the landing page search form as it's only content. Bascially these links are cluttering up the navbar. It's a symptom of over-scaling. Considering user flow, the project…</p>
                 <ul className="issue-list">
-                    <li>Trimmed the navbar options to top level pages</li>
-                    <li>Included a direct link to the listings page</li>
-                    <li>Made the navbar more accessible by giving the links and logo a bit of breathing room and increasing the font-weight and font-size – making the accessibility</li>
+                    <li>Trimmed the navbar options to top include only top level pages</li>
+                    <li>Add a direct link to the listings page</li>
+                    <li>Made the navbar more accessible by giving the links and logo a bit of breathing room and increasing the font-weight and font-size for better visibility</li>
                 </ul>
             </div>,
         issue3org: 'https://snz04pap002files.storage.live.com/y4mXlgsyMZR3W2TZd3Vy9_CiAzNOGog0ebIe_Iisgd-QIr3s186KdcHztyG_j5BXGzXSu3jIB6FLUl-Fe87I2KsiDJmLQ5fsfI5uO8patNS_M2pZQZ9g0J7h8SHamGWzHnR8Omh1xsd_aHqmrk_2WysktcbDnUYfJFMYt0o2M1ekog4NcKO0nJb6Vp9ZZ6bc6bw?width=544&height=660&cropmode=none',
@@ -282,22 +280,21 @@ const projects = [
         issue3class: 'issue-img issue3-img',
         issue3title: 'Listing Page',
         issue3note: <div className="issue-content">
-                <p className="issue-description">The listings page layout isn’t very user-friendly.  The property cards are laid out horizontally from sided to side and top to bottom. The page is extremely long. Users are giving an option to filter and no option to search listings. Users have to go back to the home page to redefine their search.  The project…</p>
+                <p className="issue-description">The listings page layout isn’t very user-friendly.  The property cards are laid out horizontally from sided to side and top to bottom. The page is extremely long. Users are giving an option to filter and no option to search listings. The image of the original page shows page close up and as a screen grab &#40;that skinn piece to the left of the first photo&#41; To redefine a listing page search, users have to go back to the home page.  The project…</p>
                 <ul className="issue-list">
-                    <li>Gives the property card a vertical layout – displays the property card as a grid</li>
-                    <li>Includes a search form for users to redefine their search</li>
-                    <li>Reworded search fail messages to include the users search parameters &mdash; the search form acts as a filter which rendering adding a filter to the page moot</li>
+                    <li>designed the property card in a vertical layout &mdash; displays each property card as in a 3 x 9 grid</li>
+                    <li>includes a search form for users to search and/or redefine their search</li>
+                    <li>reworded search fail messages to include the users search parameters</li>
+                    <li>removed listings filter &mdash; the search form acts as a filter</li>
                 </ul>
             </div>,
         addnotes: <ul className="add-note-list">
             <li><strong>Site Update:</strong> the site is currently being updated &mdash; our project is based on the site before the updates</li>
             <li><strong>Security:</strong> the site is unsecure &mdash; SSL is needed</li>
-            <li><strong>Images:</strong> while the site uses, mostly, quality images &mdash; the image sizes should be standardized</li>
+            <li><strong>Images:</strong> while the site uses, mostly, quality images &mdash; the image sizes and quality should be standardized</li>
             <li><strong>Contrast:</strong> the color contrast ratio for orange and white color scheme is <em>3.95</em> &mdash; <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> recommends a ratio of <em>4.5:1</em> &mdash; the color scheme should be re-evaluated to increase accessiblity</li>
-            <li><strong>Labels:</strong> adding icons to the search labels, navbar links would be inclusive of a larger pool of users with various capabilities</li>
         </ul>,
         projecttools: <div>
-            <p>We used the follow tools to build this project.</p>
             <ul className="tools-list">
                 <li>{sassCss}</li>
                 <li>HTML/Javascript</li>
