@@ -62,18 +62,18 @@ const projects = [
         issue1class: 'issue-img issue1-img',
         issue1title: 'Page Header and Navbar',
         issue1note: <div className="issue-content">
-                <p className="issue-description">The link label says bookings, but the page is titled &ldquo;Micheal C. Lewis&rdquo;. The page seems unfinished and haphazard; not at all inviting. A more appropriate title for this page, as is, would be &ldquo;Contact&rdquo;. The purpose of the page is for users to book or inquiry lessons. To make the page self descriptive and more inviting to the user, we...</p>
+                <p className="issue-description">The link label says bookings, but the page is titled &ldquo;Micheal C. Lewis&rdquo;. The page seems unfinished and haphazard; not at all inviting. A more appropriate title for this page, as is, would be &ldquo;Contact&rdquo;. The purpose of the page is for users to book or inquire about music lessons. User's can't book from the current page. Our updates make the page title descriptive, we...</p>
                 <ul className="issue-list">
                     <li>changed the page title to reflect the page's purpose &mdash; made the header a hero</li>
                     <li>gave the navbar a new hierachy
                         <ul>
                             <li>placed &ldquo;photo and video&rdquo; links under &ldquo;Media&rdquo;</li>
-                            <li>removed &ldquo;store&rdquo; link &mdash; the store is a blank page &mdash; users can make purchases via a dropdown menu under the &ldquo;Music&rdquo; link</li>
-                            <li>&ldquo;review&rdquo; link was renamed &ldquo;press release &rdquo; and placed under &ldquo;Music&rdquo; link &mdash; there were no reviews and one press release</li>
+                            <li>for the navbar we removed &ldquo;store&rdquo; link &mdash; the store is a blank page &mdash; users can make purchases via a dropdown menu under the &ldquo;Music&rdquo; link</li>
+                            <li>renamed the &ldquo;review&rdquo; link, placed &ldquo;press release &rdquo; under the &ldquo;Music&rdquo; link &mdash; there were no reviews and one press release</li>
                             <li>the logo brands the navbar and acts as the &ldquo;home&rdquo; page link</li>
                         </ul>
                     </li>
-                    <li>the sidebar has been removed &mdash; it contains a contact and log-in form &mdash; a hidden log-in is not user-friendly and one contact/booking form is enough</li>
+                    <li>the sidebar has been removed &mdash; it contains a contact and log-in form &mdash; hidden from users. Users couldn't log in and one contact form is sufficient.</li>
                     
                 </ul>
             </div>,
@@ -83,9 +83,9 @@ const projects = [
         issue2class: 'issue-img issue2-img',
         issue2title: 'Content Layout',
         issue2note: <div className="issue-content">
-                <p className="issue-description">The layout lacks harmony. There's no connection between setions and elements. The form looks unfinished and is not at all inviting. The project brings some harmony to the page by...</p>
+                <p className="issue-description">The layout lacks harmony. There's no connection coherent flow between sections and elements. The form looks unfinished and is not at all inviting. The project brings some harmony to the page by...</p>
                 <ul className="issue-list">
-                    <li>creating a lay-out distinquishes the form and contact info</li>
+                    <li>creating a lay-out with one purpose and to distinct groups</li>
                     <li>pairing icons with labels to give users a visual and text definition</li>
                     <li>adding a call-to-action title reinforcing the goal of the page</li>
                     <li>adding social links to the contact info</li>
@@ -168,7 +168,7 @@ const projects = [
                 <ul className="issue-list">
                     <li>pie link by removing it &mdash; since &ldquo;pie&rdquo; is the story &#40;not the only one, but a huge part of the story&#41; it deserves a stand&ndash;out section on the story page</li>
                     <li>the menu link destination was reconfigured &mdash; clicking it will scroll to a menu-isk section &mdash; we call it a &ldquo;testimonial menu&rdquo; &mdash; hovering over the menu link opens a dropdown &#40;same as original&#41; with a list of direct links to all product pages</li>
-                    <li>the cart link&#92;indicator has been added to the navbar &mdash; this way it won't get lost and maintains a position of prominence &mdash; makes it real easy for the user to shop</li>
+                    <li>the cart link&#92;indicator has been added to the navbar &mdash; this way it won't get lost and maintains a position of prominence &mdash; makes real easy for the user to watch and access the cart.</li>
                 </ul>
             </div>,
         issue2org: 'https://snz04pap002files.storage.live.com/y4m6VE8KpTVwNxF7R_MND6ZxwY4Bm_U1PPuH-A0gglDnAloBQbYYxWE37ExmxA8iBY3b5SpbRRUrrt5mFGj1oCjWJvtNhYm09eHrPkK1gpvUjndZGY1aBimAF7F48waTS3U9bkYTqekdtxRYdeyAKzr9tL6aCLjioaeXNBYL8KFmVdQQzMNyqaoaNX0yiyShQTF?width=660&height=406&cropmode=none',
@@ -180,8 +180,8 @@ const projects = [
                 <p className="issue-description">Who needs a menu when you have less then 10 products for sale? Okay 10 may not be the magic number I think it is, but one has to draw the line somewhere. There are about 4&ndash;6 pie fillings. Approximately 2 of these fillings are seasonal. A menu page is overkill. A waste of prime real estate. After all, the purpose of the site is to sell pies. A solution is to pair the product with a testimonial...</p>
                 <ul className="issue-list">
                     <li>the sites menu page, if you can find it, is a paged filled with oversized images with barely visible text on top &mdash; the menu link on the home page opens a product page &mdash; a clear case of mislabeling &mdash; the project displays all the products on the landing page as a simple card &mdash; each card links to the specified product page;</li>
-                    <li>the testimonials' font-size was decreased &mdash; given a colored background and border &mdash; and paired as a companion of a product it describes or closely describes;</li>
-                    <li>the menu link quickly scrolls the page and still provides a handy dropdown with links to individual product pages</li>
+                    <li>the testimonials' font-size was decreased &mdash; and the testimonials have been given a backgound color and border to maintain continuity &mdash; each testimonails is a companion of a product it describes or closely describes &mdash; creating a &ldquo;testimon-enu&rdquo;</li>
+                    <li>the menu link now scrolls the page to the menu on click and displays a dropdown menu on hover.</li>
                 </ul>
                 
             </div>,
@@ -191,9 +191,9 @@ const projects = [
         issue3class: 'issue-img issue3-img',
         issue3title: 'Parallax Effect',
         issue3note: <div className="issue-content">
-                <p className="issue-description">Thanks to some quality images, the product looks yummy. And then there's an opening parallax that introduces the product. As with much of the landing page, it's oversized and scrolls awkwardly. The project opens with a cleaned up parallax that:</p>
+                <p className="issue-description">Thanks to some quality images, the product looks yummy. And then there's an opening parallax that reveals an image of the product. As with much of the landing page, it's oversized and scrolls awkwardly. The project opens with a cleaned up parallax that:</p>
                 <ul className="issue-list">
-                    <li>doesn't expose the entire image &mdashp; parallax works best when the image is revealed in sections &mdash; we start in the middle &mdash; as the user scrolls the product gets revealed;</li>
+                    <li>doesn't expose the entire image &mdash; parallax works best when the image is revealed in stages &mdash; we start in the middle &mdash; as the user scrolls the full product image is revealed;</li>
                     <li>inserts introduction content on top of the parallax image so users know upfront what the site is about and selling;</li>
                     <li>there are two parallaxes on the landing page &mdash; we elminated the second parallax to keep the page concise and managable</li>
                 </ul>
@@ -254,11 +254,11 @@ const projects = [
         issue1class: 'issue-img issue1-img',
         issue1title: 'Quick Search',
         issue1note: <div className="issue-content">
-                <p className="issue-description">If your agency is a small operation; your property inventory is in the 100s, instead of the thousands. Not controlling how users search your listings will create unnecessary user pain points. Best to let the inventory drive the search. The project controls the search based on inventory and type. The project reduced...</p>
+                <p className="issue-description">If your agency is a small operation; your property inventory is in the 100s, instead of the thousands. Not controlling how users search your listings will create unnecessary user pain points. Best to let the inventory drive the search. The project controls the search based on inventory and type &mdsash; reducing...</p>
                 <ul className="issue-list">
-                    <li>the number of form inputs &mdash; 7 inputs does not connote &ldquo;quick&rdquo; &mdash; the project includes 2; &ldquo;location&rdquo; and &ldquo;type&rdquo; &mdash; remember it's all about the location with property</li>
-                    <li>user input is controlled via dropdown menus that list locations and types &#40;i.e.; rental, buy&#41; of properties that are in inventory only &mdash; increasing the success of user searches 80% – 90%</li>
-                    <li>A search form with 4 inputs was added to the listings page &mdash; users can search via 2 additional inputs &#40;price and/or bedrooms&#41; &mdash; adding these search optoins does increase the chance of a failed search &mdash; however these inputs returns results based on a range &mdash; user search success is approximately 70% - 85%</li>
+                    <li>the number of form inputs &mdash; 7 inputs does not connote &ldquo;quick&rdquo; &mdash; the project includes 2; &ldquo;location&rdquo; and &ldquo;type&rdquo; &mdash; we haven't seen many real estate sites with quick searchs that have more than 3 inputs...We chose the two inputs tht would return the most successful results...our inputs use...</li>
+                    <li>a dropdown list of property locations and types &#40;i.e.; rental, buy&#41; that are in inventory &mdash; increasing users search result by Approximately 85% – 95%</li>
+                    <li>users have the option to do more detailed searches on listings page &mdash; however the increase in search options, though based on inventory &mdash; when used in combination descrease the rate of a search with results to approximately 80% - 90%</li>
                 </ul>
             </div>,
         issue2org: 'https://snz04pap002files.storage.live.com/y4mZlBJAb3F71sZmnGsnyauBqwpenZ0PLse4O4TFRJ4wVRe5XNmLkWn-J_r1OL5_5HfPaZ4om6WpxHI-p1bJHAoRw2kEXCAf8NkDr3bsSRdMVPL-aQP1yQJst7grBGnEWl6tlyXLg_QBVBL-7_6Gv-U1CTLXJa9LXQu8mOZfG7oVNN6Mgpdl7YgSwgRhuKA67IN?width=660&height=45&cropmode=none',
@@ -269,9 +269,9 @@ const projects = [
         issue2note: <div className="issue-content">
                 <p className="issue-description">There is no direct link to the most important page on the site – the listings page. Instead, the navbar includes links to property categories (i.e.; residential, commercial). Following the link opens a page with the landing page search form as it's only content. Bascially these links are cluttering up the navbar. It's a symptom of over-scaling. Considering user flow, the project…</p>
                 <ul className="issue-list">
-                    <li>Trimmed the navbar options to top include only top level pages</li>
-                    <li>Add a direct link to the listings page</li>
-                    <li>Made the navbar more accessible by giving the links and logo a bit of breathing room and increasing the font-weight and font-size for better visibility</li>
+                    <li>trimmed the navbar options to include only top level pages</li>
+                    <li>added a direct link to the listings page</li>
+                    <li>made the navbar more accessible by giving the links and logo a bit of breathing room and increasing the font-weight and font-size for better visibility</li>
                 </ul>
             </div>,
         issue3org: 'https://snz04pap002files.storage.live.com/y4mXlgsyMZR3W2TZd3Vy9_CiAzNOGog0ebIe_Iisgd-QIr3s186KdcHztyG_j5BXGzXSu3jIB6FLUl-Fe87I2KsiDJmLQ5fsfI5uO8patNS_M2pZQZ9g0J7h8SHamGWzHnR8Omh1xsd_aHqmrk_2WysktcbDnUYfJFMYt0o2M1ekog4NcKO0nJb6Vp9ZZ6bc6bw?width=544&height=660&cropmode=none',
@@ -280,12 +280,12 @@ const projects = [
         issue3class: 'issue-img issue3-img',
         issue3title: 'Listing Page',
         issue3note: <div className="issue-content">
-                <p className="issue-description">The listings page layout isn’t very user-friendly.  The property cards are laid out horizontally from sided to side and top to bottom. The page is extremely long. Users are giving an option to filter and no option to search listings. The image of the original page shows page close up and as a screen grab &#40;that skinn piece to the left of the first photo&#41; To redefine a listing page search, users have to go back to the home page.  The project…</p>
+                <p className="issue-description">The listings page layout isn’t very user-friendly.  The property cards are laid out horizontally. Each card is it's own row. Making the page extremely long and hard to scroll. While users can filter the page, the options are minimal. There's no search input. To search the listings page a user has to go back to the home page. Our updates include...</p>
                 <ul className="issue-list">
-                    <li>designed the property card in a vertical layout &mdash; displays each property card as in a 3 x 9 grid</li>
-                    <li>includes a search form for users to search and/or redefine their search</li>
-                    <li>reworded search fail messages to include the users search parameters</li>
-                    <li>removed listings filter &mdash; the search form acts as a filter</li>
+                    <li>the listing pages is now a 3 x 9 grid card layout &mdash; our design <em>would</em> allow users to change the number of cards viewed per per page. The live sample is using a limited inventory that fits on one page. So this option is not included. However, the grid layout is easy to scale</li>
+                    <li>a filter/search form has been added in page &mdash; users can refine their search parameters without leaving the page</li>
+                    <li>searches that return no results now returns a fail message that includes the users search parameters &mdash; informing users why the search failed &#40;i.e., there are no rentals with 2 bedrooms available in the bronx&#41;</li>
+                    <li>all inputs are dropdown list that include only what's in inventory &mdash; reducing user fustration and pain</li>
                 </ul>
             </div>,
         addnotes: <ul className="add-note-list">
