@@ -1,4 +1,4 @@
-This project is a training exercise. A chance to practice making components in React and lauching a React app. It always was a a way to work on the layout of case studies.
+My first launched React app. Not really an app as much a chance to practice and lauch a React project.
 
 # Getting Started with Create React App
 
