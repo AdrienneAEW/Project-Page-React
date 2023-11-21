@@ -1,3 +1,5 @@
+This project is a training exercise. A chance to practice making components in React and lauching a React app. It always was a a way to work on the layout of case studies.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
